@@ -1,0 +1,20 @@
+﻿<grammar version="1.0" xml:lang="en-US" root="rootRule" tag-format="semantics/1.0-literals" xmlns="http://www.w3.org/2001/06/grammar">
+  <rule id="rootRule">
+    <one-of>
+      <item>
+        <tag>LOCK</tag>
+        <one-of>
+          <item> lock </item>
+          <item> close </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>UNLOCK</tag>
+        <one-of>
+          <item> unlock </item>
+          <item> open </item>
+        </one-of>
+      </item>      
+    </one-of>
+  </rule>
+</grammar>
